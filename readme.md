@@ -28,7 +28,7 @@ Here is an example inside routes/web.php
 ```php
 Route::get('/', function () {
 
-    $samplImagePath = storage_path('app/sample_dhivehi_text.png');
+    $sampleImagePath = storage_path('app/sample_dhivehi_text.png');
 
     //recognise text from image
     $string = app(Aimme\ThaanaOCR\ThaanaOCR::class)
