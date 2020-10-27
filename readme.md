@@ -1,16 +1,16 @@
 ## TO DO
 
-Just a pre-release, but works fine. Need little refactoring to make it perfect. Feel free to contribute. I wrote it for a project 2 years ago, wanted to make it public as soon as it is for now.
+Just a pre-release, but works fine. Need little refactoring to make it perfect. Feel free to contribute. I wrote it for a project 2 years ago, wanted to make it public as soon as it is for now. 
 
 ### Features
 - OCR Thaana images
-- OCR PDFs
+- OCR Thaana PDFs
 
 ### Installation
 
 ```composer require aimme/thaanaocr```
 
-add following to .env
+##### Add following to .env
 
 ```
 VISION_API_ENABLED=true
@@ -18,7 +18,13 @@ VISION_API_URL=https://vision.googleapis.com/v1p2beta1/images:annotate
 VISION_API_KEY=
 ```
 
-create ```storage/app/uploaded/ocr``` folder to store complete response from Vision API  as text.
+##### Create  following folders and give read/write permission
+- storage/app/uploaded/ocr/google_vision_responses
+- storage/app/uploaded/ocr/images
+- storage/app/uploaded/ocr/pdfs
+- storage/app/uploaded/ocr/pdfs/converted_images
+
+Need to clean these folders once in a while. This was created for a specific project, so it is bit customized. Will be improving it.
 
 
 ### Usage
@@ -42,12 +48,17 @@ Route::get('/', function () {
 });
 ```
 
+For more examples and ways to convert PDF to images for OCR check
+```php
+Aimme\ThaanaOCR\Http\Controllers\ThaanaOCRController
+```
+
 
 #### PDF Conversion Requirments
 
 If you are working with just images, ignore this part.
 
-to convert pdf to image format php package spatie/pdf-to-image is required - ref: https://github.com/spatie/pdf-to-image
+to convert pdf to image format php package ```spatie/pdf-to-image``` is required - ref: https://github.com/spatie/pdf-to-image
 
 for that package you need to install php7.2-imagick - ref: https://www.php.net/manual/en/imagick.setup.php
 
