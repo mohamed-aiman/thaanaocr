@@ -50,6 +50,7 @@ Route::get('/', function () {
 
 For more examples and ways to convert PDF to images for OCR check
 ```php
+//thaanaocr/src/Http/Controllers/ThaanaOCRController.php 
 Aimme\ThaanaOCR\Http\Controllers\ThaanaOCRController
 ```
 
