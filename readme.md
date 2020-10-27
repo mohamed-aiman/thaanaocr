@@ -1,10 +1,10 @@
-## TO DO
+# OCR Thaana images
 
-Just a pre-release, but works fine. Need little refactoring to make it perfect. Feel free to contribute. I wrote it for a project 2 years ago, wanted to make it public as soon as it is for now. 
+A Laravel package that can be used for OCR of Thaana (Maldives/Dhivehi Language) images using Google Cloud Vision API. The package includes usage examples, on how to use this package for OCR of images and multi page PDFs.
 
-### Features
-- OCR Thaana images
-- OCR Thaana PDFs
+
+This is just a pre-release, but it works fine. Need little refactoring to make it perfect. Feel free to contribute. I wrote this for a project 2 years ago, wanted to make it public as soon as it is for now. 
+
 
 ### Installation
 
