@@ -1,0 +1,45 @@
+{
+    "name": "aimme/thaanaocr",
+    "description": "A Laravel package that can be used for OCR of Thaana (Maldives/Dhivehi Language) using Google Cloud Vision API",
+    "keywords": [
+        "aimme",
+        "thaana",
+        "ocr",
+        "maldives",
+        "dhivehi"
+    ],
+    "homepage": "https://github.com/mohamed-aiman/thaanaocr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Aiman",
+            "email": "muhammadhu.aiman@gmail.com",
+            "homepage": "https://mohamedaiman.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Aimme\\ThaanaOCR\\": "src"
+        }
+    },
+    "autoload-dev": {
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aimme\\ThaanaOCR\\ThaanaOCRServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
